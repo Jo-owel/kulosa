@@ -1,0 +1,93 @@
+ @import url("fonts.google.com/css2?")
+ /*Base styling*/
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }
+ body{
+    background-size: cover;
+
+ }
+ ul{
+    text-decoration: none;
+ }
+ li{
+    list-style-type: none;
+ }
+ a{
+    text-decoration: none;
+ }
+ img{
+    border-top: 100px;
+    max-width: fit-content;
+ }
+ h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+ }
+ h2{
+    font-size: larger;
+    padding: 0 16px
+ }
+ .tweets{
+   margin: 16px;
+   border-radius: 40px;
+   color: black;
+   width: 100px;
+   background-color: yellowgreen;
+
+ }
+ /*Navigation*/
+
+ nav ul li a{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+ }
+ /*Header*/
+
+ nav ul{
+    display: flex;
+    align-items: center;
+     margin: 0;
+     transition: opacity 2s;
+     }
+     
+ /*Blog-Post*/
+ Blog-Post{
+    padding: 0 16px;
+    margin-top:  16px;
+
+ }
+.container{
+    display: grid;
+    grid-template-columns: span 3;
+    grid-template-rows: 100px auto 100px;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+header{
+    background-color: dodgerblue;
+    grid-column-start: span 3;
+}
+main{
+    background-color: darkgrey;
+    grid-column-start: span 3;
+}
+footer{
+    background-color: dodgerblue;
+    grid-column-start: span 3;
+    align-content: center;
+}
+@media(max-width: 768px){
+    .contianer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 100px;
+    }
+    header,main,footer{
+        grid-column-start: span 3;
+    }
+}
